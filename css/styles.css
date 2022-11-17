@@ -20,17 +20,19 @@ margin-bottom: 4rem;
 .navegacion li{
     display: inline;
     margin-right: 5rem;
+}
+
+.formulario{
+    border: solid;
+}
     
-    
-    
-    
-    
-    }
+
   .navegacion{
         margin-bottom: 6rem;
         margin-left: 15rem;
         background-color:#176585;
         padding: .3rem 1rem;
+        
         
     }
 
@@ -269,6 +271,11 @@ button{
                 
             }
             
+            #carouselExampleIndicators {
+                width: 50%;
+                margin: 0% auto;
+                margin-top: 5rem;
+            }
             
             
             
