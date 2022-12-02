@@ -1,0 +1,54 @@
+
+
+.formulario_contacto {
+    margin: 2rem;
+    text-align: center;
+}
+
+.formulario {
+    border: solid;
+    margin: 0rem 1rem;
+    width: 30rem;
+    }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.text-area{
+    resize: none;
+    
+}
+
+.flex-botone{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width:450px){
+    .formulario_contacto{
+        font-size: 1.3rem;
+    }
+    .formulario {
+        border: solid;
+        margin: 0rem 1rem;
+        width: 20rem;
+        
+        
+    }
+
+
+}
+
+

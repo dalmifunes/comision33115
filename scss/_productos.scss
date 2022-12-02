@@ -1,0 +1,72 @@
+.productos {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.padre_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    width: 20rem;
+    border: solid black;
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card__parrafo4 {
+    font-size: 1.8rem;
+}
+
+.parrafo4__precio {
+    font-size: 1.3rem;
+}
+
+
+.card_img2 {
+    width: 20rem;
+    height: 20rem;
+}
+
+.card__parrafo2 {
+    font-size: 1.8rem;
+}
+
+.oferta {
+    background-color: yellow;
+    width: max-content;
+}
+
+.parrafo_descuento {
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.precio-descuento {
+    font-size: 1.3rem;
+}
+
+
+.card_img3 {
+    width: 20rem;
+    height: 20rem;
+}
+
+
+@media screen and (max-width: 745px) {
+.padre_card {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+}
+}

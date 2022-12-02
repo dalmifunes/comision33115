@@ -1,0 +1,84 @@
+.grid-inicio{
+    display: grid;
+    grid-template-areas:
+    "head head"
+    "main main"
+    "footer footer";
+    
+}
+
+.head{
+    grid-area: head;
+
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+.h1-bienvenidos {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.elegi {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+    margin: 0% auto;
+    margin-top: 5rem;
+}
+
+.alineado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.h3_remeras {
+    margin: 1.5rem 0;
+}
+
+.section_h3 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 450px) {
+    .nube_nav {
+    width: 125px;
+    height: 75px;
+    }
+    .nube {
+    width: 125px;
+    height: 75px;
+    }
+    .h1-bienvenidos {
+    font-size: 1rem;
+    }
+    .elegi {
+    font-size: 0.8rem;
+    }
+    .h3_remeras {
+    font-size: 0.8rem;
+    }
+    footer {
+    font-size: 0.8rem;
+    }
+}

@@ -1,273 +1,265 @@
-body{
-    background-image: url(../img/sky.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Anton', sans-serif;
-}
-.lorem{
-    margin: 0 2rem;
-    text-align: justify;
-}
-.h3_remeras{
-    margin: 1.5rem 0;
-} 
-.section_h3{
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+.grid-inicio {
+  display: grid;
+  grid-template-areas: "head head" "main main" "footer footer";
 }
 
-.navegacion{
-    text-align: center;
+.head {
+  grid-area: head;
 }
 
-.navegacion li{
-    display: inline;
-    margin-right: 5rem;
+.main {
+  grid-area: main;
 }
 
-.formulario_contacto{
-    margin: 2rem 1rem;
-    
+.footer {
+  grid-area: footer;
 }
 
-.formulario{
+.h1-bienvenidos {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.elegi {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+#carouselExampleIndicators {
+  width: 50%;
+  margin: 0% auto;
+  margin-top: 5rem;
+}
+
+.alineado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h3_remeras {
+  margin: 1.5rem 0;
+}
+
+.section_h3 {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 450px) {
+  .nube_nav {
+    width: 125px;
+    height: 75px;
+  }
+  .nube {
+    width: 125px;
+    height: 75px;
+  }
+  .h1-bienvenidos {
+    font-size: 1rem;
+  }
+  .elegi {
+    font-size: 0.8rem;
+  }
+  .h3_remeras {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
+.formulario_contacto {
+  margin: 2rem;
+  text-align: center;
+}
+
+.formulario {
+  border: solid;
+  margin: 0rem 1rem;
+  width: 30rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.text-area {
+  resize: none;
+}
+
+.flex-botone {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  .formulario_contacto {
+    font-size: 1.3rem;
+  }
+  .formulario {
     border: solid;
     margin: 0rem 1rem;
-    margin-right: 50rem;
-}
-.formulario1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-    
-
-
-.alineado{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1-bienvenidos{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-
-
-.elegi{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    
-}
-
-ul{
-    list-style: none;
-    display: center;
-
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.card__parrafo{
-    font-size: 1.8rem;
-    
-}
-.card__parrafo--grande{
-    font-size: 1.3rem;
-}
-
-button{
-    padding: 1rem;
-    
-}
-.card__img{
     width: 20rem;
-    height: 20rem;
-    
+  }
 }
-.productos{
-    text-align: center;
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-}
-.card__img{
-    border:solid  rgb(0, 0, 0);
+.productos {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
-
-
-    
-
-.card{
-    width: 20rem;
-    border: solid black;
-    margin-bottom: 5rem;
-    margin-right: auto;
-    margin-left: auto;
+.padre_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.card_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card {
+  width: 20rem;
+  border: solid black;
+  margin-bottom: 5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-    
-img{
-    max-width: 100%;
-
+.card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.padre_card{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-        
-}
-    
-
-footer{
-    text-align: center;
+.card__parrafo4 {
+  font-size: 1.8rem;
 }
 
-    
-.card__parrafo2{
-    font-size: 1.8rem;
+.parrafo4__precio {
+  font-size: 1.3rem;
 }
 
-
-.parrafo_descuento{
-    font-size: 1.3rem;
-    text-decoration: line-through;
-    color: grey;
-}
-        
-
-.card_img2{
-    width: 20rem;
-    height: 20rem;
-            
-}
-        
-
-.oferta{
-    background-color: yellow;
-    width: max-content;
-}
-            
-
-.precio-descuento{
-    font-size: 1.3rem;
-}
-        
-            
-.card_img3{
-    width: 20rem;
-    height: 20rem;
+.card_img2 {
+  width: 20rem;
+  height: 20rem;
 }
 
-
-.card_4{
-    padding: 3rem;
-    border: solid rgb(203, 59, 59);
-    width: 21rem;
-    position: relative;
-}
-            
-.card__parrafo4{
-    font-size: 1.8rem;
+.card__parrafo2 {
+  font-size: 1.8rem;
 }
 
-
-.parrafo4__precio{
-    font-size: 1.3rem;
+.oferta {
+  background-color: yellow;
+  width: max-content;
 }
 
-footer{
-    text-align: center;
+.parrafo_descuento {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+  color: grey;
 }
 
-
-.modelo-remera{
-    width: 35em;
-    border:solid #ffffff;
-    margin-left: 22rem;
-    margin-top: 5rem;
-}
-            
-#carouselExampleIndicators {
-    width: 50%;
-    margin: 0% auto;
-    margin-top: 5rem;
-}
-            
-.guia_talles{
-    text-align: center;
-    margin-top: 3rem;
-}
-            
-.devolucion{
-    text-align: center;
-    margin-top: 5rem;
-
+.precio-descuento {
+  font-size: 1.3rem;
 }
 
-.politica1{
-    text-align: center;
-    padding: 0rem 15rem;
-}
-
-.aqui_mapa{
-    margin-top: 3rem;
-}
-            
-            
-            
-@media screen and (max-width: 450px) {
-    .nube_nav{
-        width: 125px;
-        height: 75px;                      
-    }
-    .nube{
-        width: 125px;
-        height: 75px;
-    }
-        .h1-bienvenidos{
-        font-size: 1rem;
-    }
-        .elegi{
-        font-size: .8rem;
-    }
-        .h3_remeras{
-        font-size: 0.8rem;
-    }
-        footer{
-        font-size: 0.8rem;
-    }
-
+.card_img3 {
+  width: 20rem;
+  height: 20rem;
 }
 
 @media screen and (max-width: 745px) {
-    .padre_card{
+  .padre_card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-                    
-    }
+  }
 }
-            
-            
-            
-            
-            
-            
-            
-            
-            
+.guia_talles {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.devolucion {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.politica1 {
+  text-align: center;
+  padding: 0rem 15rem;
+}
+
+@media screen and (max-width: 500px) {
+  .guia_talles {
+    font-size: 1.2rem;
+  }
+  .table {
+    width: 250px;
+    margin-left: 4.5rem;
+  }
+  .devolucion {
+    font-size: 1.2rem;
+  }
+  .politica1 {
+    font-size: 0.8rem;
+    padding: 0rem 2rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.aqui_mapa {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.mapa {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .aqui_mapa {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .mapa {
+    width: 380px;
+    height: 380px;
+    margin-left: 0.3rem;
+  }
+  footer {
+    text-align: center;
+    margin-top: 5rem;
+  }
+}
+body {
+  background-image: url(../img/sky.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Anton", sans-serif;
+}
+
+.navegacion {
+  text-align: center;
+}
+
+.navegacion li {
+  display: inline;
+  margin-right: 5rem;
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
