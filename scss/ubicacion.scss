@@ -21,8 +21,7 @@
 
     .mapa{
     
-    width: 380px;
-    height: 380px;
+    @include sizes(380px, 380px)
     margin-left: 0.3rem;
 }
 footer{

@@ -25,21 +25,20 @@
 
 
 .card__parrafo4 {
-    font-size: 1.8rem;
+    @extend .card-parrafo
 }
 
 .parrafo4__precio {
-    font-size: 1.3rem;
+    @extend .card-precio
 }
 
 
 .card_img2 {
-    width: 20rem;
-    height: 20rem;
+    @extend .medidas
 }
 
 .card__parrafo2 {
-    font-size: 1.8rem;
+    @extend .card-parrafo
 }
 
 .oferta {
@@ -48,19 +47,18 @@
 }
 
 .parrafo_descuento {
-    font-size: 1.3rem;
+    @extend .card-precio
     text-decoration: line-through;
     color: grey;
 }
 
 .precio-descuento {
-    font-size: 1.3rem;
+    @extend .card-precio
 }
 
 
 .card_img3 {
-    width: 20rem;
-    height: 20rem;
+    @extend .medidas
 }
 
 
